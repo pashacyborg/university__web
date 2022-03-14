@@ -1,0 +1,137 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  min-width: 1080px;
+  margin: 0 auto;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-from {
+
+}
+
+.page-form__container1 {
+  background-color: #FFFF00;
+  color: #000000;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+
+.page-form__container1:hover {
+  background-color: #0000FF;
+  color: #FFFF00;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+
+.page-form__intro {
+  display: grid;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.page-from__title {
+  margin: 0;
+  margin-top: 50px;
+  padding-bottom: 30px;
+
+}
+
+.page-form__main-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.personal-data__login {
+  display: flex;
+}
+
+.personal-data__passrord {
+  display: flex;
+}
+
+.personal-data__input {
+  flex-grow: 1;
+}
+
+.page-form__container2 {
+  background-color: #FFFF00;
+}
+
+.page-form__submit-button {
+  display: block;
+  border-radius: 15px;
+  font-size: 25px;
+  color: yellow;
+  background: blue;
+  border: 5px solid blue;
+}
+
+.form {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+.form__display {
+  padding-bottom: 10px;
+}
+
+.form__input {
+  margin: 0;
+}
+
+/*.page-discription {*/
+
+/*}*/
+
+.page-discription__cyborg {
+  display: flex;
+  justify-content: center;
+  min-height: 1200px;
+}
+
+.page-discription__cyborg-image {
+  align-self: end;
+  width: 1300px;
+  height: 834px;
+  object-fit: fill;
+  transition-property: opacity;
+  transition-duration: 5s;
+  opacity: 0;
+}
+
+.page-discription__cyborg-image:hover {
+   opacity: 1;
+   transition-property: opacity;
+   transition-duration: 5s;
+}
+
