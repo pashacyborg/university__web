@@ -7,11 +7,11 @@ function Validate() {
         alert("Пожалуйста проверьте ваш пароль");
         document.myForm.password.focus()
         return false
-    } else if(document.myForm.password.length < 3) {
+    } else if(document.myForm.password.value.length < 5) {
         alert("Пароль должен содержать не менее трех символов!");
         document.myForm.password.focus()
         return false
-    } else if(document.myForm.email.indexOf("@")) {
+    } else if(document.myForm.email.indexOf("@") !== -1) {
        alert("Логин должен содержать символ @");
         document.myForm.email.focus()
         return false
