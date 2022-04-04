@@ -10,7 +10,7 @@
     <main class="page-form">
       <div class="page-form__container1">
         <div class="page-form__intro">
-          <h1 class="page-from__title">Свежие маслята</h1>
+          <h1 class="page-from__title">Свежие маслята.</h1>
           <a class="page-form__main-logo" href="additional-page.html" aria-label="Перейти к описанию маслят">
             <img src="img/cute-butterflies.jpg" width="500" height="500" alt="Замечательный масленок">
           </a>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="page-form__container2">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form" action="/" name="myForm" onsubmit="return(Validate());">
           <div class="form__display">
             <input class="form__input" type="checkbox" name="dark-theme" id="dark-theme-field">
             <label class="form__label" for="dark-theme-field">Включить темную тему</label>
@@ -29,11 +29,11 @@
             <h2 class="visually-hidden">Персональные данные</h2>
             <div class="personal-data__login">
               <label class="personal-data__label" for="email-field">E-mail</label>
-              <input class="personal-data__input" type="email" name="email" id="email-field" placeholder="Ваш Email*">
+              <input class="personal-data__input" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
             </div>
             <div class="personal-data__passrord">
               <label class="personal-data__label" for="password-field">Password</label>
-              <input class="personal-data__input" type="password" name="email" id="password-field" placeholder="Ваш пароль*">
+              <input class="personal-data__input" type="password" name="password" id="password-field" placeholder="Ваш пароль*">
             </div>
             <div class="personal-data__wishes">
               <label class="personal-data__label" for="text-area-field">Какой сорт маслят вы предпочитаете?</label><br>
@@ -42,10 +42,11 @@
           </section>
           <div class="page-form__outro">
             <small class="page-form__notice page-form__notice--outro">*Поля обязательны для заполнения</small>
-            <button class="page-form__submit-button" type="submit" name="submit-button">Зарегестрироваться</button>
+            <button class="page-form__submit-button" type="submit" name="submit-button" aria-label="Отправить заявку на регистрацию">Зарегестрироваться</button>
           </div>
         </form>
       </div>
     </main>
+    <script src="js/maslo.js"></script>
   </body>
 </html>
